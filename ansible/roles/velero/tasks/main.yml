@@ -1,0 +1,6 @@
+---
+- name: deploying..
+  shell:   kubectl apply -f 05-backupstoragelocation.yaml &&  kubectl apply -f 06-volumesnapshotlocation.yaml &&  kubectl apply -f 10-deployment.yaml
+  args:
+    chdir: /root/ansible/roles/velero/tasks
+...

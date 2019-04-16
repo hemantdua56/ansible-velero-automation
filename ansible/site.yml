@@ -1,0 +1,7 @@
+---
+- name:  Backup
+  hosts: localhost
+  roles: 
+    - role: prereq
+    - role: secret
+    - role: velero

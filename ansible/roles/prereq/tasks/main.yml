@@ -1,0 +1,6 @@
+---
+- name: calling
+  shell: kubectl apply -f 00-prereqs.yaml
+  args: 
+    chdir: /root/ansible/roles/prereq/tasks
+...
